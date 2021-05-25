@@ -2,13 +2,21 @@
   --main-blue: #00ffff;
   --main-black: #000000;
   --main-white: #ffffff;
+  --main-discord: #7289da;
+  --main-twitter: #00acee;
+  --main-github: #333;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   background-color: var(--main-black);
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  padding: 20px;
 }
 
 header {
@@ -25,7 +33,10 @@ h1 {
 
 #logo {
   max-width: 100px;
-  padding: 20px;
+}
+
+#backbutton {
+  display: none;
 }
 
 .welcome-text {
@@ -34,9 +45,10 @@ h1 {
   justify-content: center;
   position: relative;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 40px;
   padding: 100px;
 }
+
 
 @media screen and (min-width: 1024px) {
   :root {
@@ -61,11 +73,31 @@ h1 {
   h1 {
     display: flex;
     justify-content: center;
+    font-size: 40px;
   }
 
   #logo {
     max-width: 200px;
-    padding: 20px;
+    padding-top: 20px;
+  }
+
+  #backbutton {
+    display: inline;
+    color: var(--main-blue);
+    background-color: var(--main-black);
+    border: 1px solid var(--main-blue);
+    padding: 5px;
+    width: 70px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  #backbutton:hover {
+    color: var(--main-black);
+    background-color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    cursor: pointer;
   }
 
   .welcome-text {
