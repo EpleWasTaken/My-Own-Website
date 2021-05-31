@@ -7,41 +7,32 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/button.css">
-    <link rel="stylesheet" href="/css/hamburgermenu.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <script src="https://kit.fontawesome.com/cafca22d75.js" crossorigin="anonymous"></script>
-    <!-- Hotjar Tracking Code for https://eple-front-end-dev.netlify.app/ -->
-    <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2271478,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-
-    <title>About me - Eple Front-end Developer</title>
-    
+    <title>Contact - Eple Front-end Developer</title>
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <a href="../index.html">
         <img id="logo" src="/Img/EpleLogoFFinal.png">
     </a>
-        <h1>Welcome to my website</h1>
-        <button id="backbutton">Back</button>
     </header>
     <nav>
-        <ul>
+        <button id="backbutton"><i class="fas fa-arrow-left"></i></button>
+        <ul class="nav__links">
             <li>
-                <a href="/portfolio.html">Portfolio</a>
+                <a href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-                <a href="/aboutme.html">About Me</a>
+                <a href="/html/aboutme.html">About Me</a>
+            </li>
+            <li>
+                <a href="/html/contact.html" class="onpage__active">Contact</a>
             </li>
         </ul>
     </nav>
+    </header>
+    <h2 class="index__h2">Only functioning tab is the <a href="/html/portfolio.html" class="index__portfolio__link">portfolio</a></h2>
     <div class="welcome-text">
         <p>🚧 Under construciton 🚧</p>
     </div>
@@ -70,6 +61,7 @@
                 </div>
             </div>
         </div>
+        <p class="index__p__addiction">Yes, I have an addiction to turquoise</p>
     </footer>
     <script src="/js/index.js"></script>
     <script src="/js/button.js"></script>

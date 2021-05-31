@@ -8,43 +8,44 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/button.css">
     <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/hamburgermenu.css">
     <script src="https://kit.fontawesome.com/cafca22d75.js" crossorigin="anonymous"></script>
-    <!-- Hotjar Tracking Code for https://eple-front-end-dev.netlify.app/ -->
-    <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2271478,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-
-    <title>Home Page - Eple Front-end Developer</title>
-    
+    <title>Rainydays - Eple Front-end Developer</title>  
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">
-                <img id="logo" src="/Img/EpleLogoFFinal.png">
-            </a>
-            <ul>
+        <a href="../index.html">
+        <img id="logo" src="/Img/EpleLogoFFinal.png">
+    </a>
+    </header>
+    <nav>
+        <button id="backbutton"><i class="fas fa-arrow-left"></i></button>
+        <ul class="nav__links">
+            <li>
+                <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="/html/aboutme.html">About Me</a>
+            </li>
+            <li>
+                <a href="/html/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="portfolio__container">
+            <ul class="portfolio__links__container">
                 <li>
-                    <a href="/portfolio.html">Portfolio</a>
+                    <a href="https://rainydaystest.netlify.app/" target="_blank"><button id="link__button">RAINYDAYS | WEBSITE</button></a>
                 </li>
                 <li>
-                    <a href="/aboutme.html">About Me</a>
+                    <a href="https://github.com/EpleWasTaken/RainyDays" target="_blank"><button id="link__button">RAINYDAYS | GITHUB</button></a>
+                </li>
+                <li>
+                    <a href="https://github.com/EpleWasTaken/RainyDays/blob/master/changesForRainydays" target="_blank"><button id="link__button">RAINYDAYS | CHANGES</button></a>
                 </li>
             </ul>
-        </nav>
-        <button id="backbutton">Back</button>
-    </header>
-    <div class="welcome-text">
-        <p>🚧 Under construciton 🚧</p>
-    </div>
+        </div>
+    </main>
     <footer>
         <div class="footer__container">
             <ul class="footer__socials">
@@ -52,7 +53,7 @@
                     <a href="https://discord.com/users/195228341970796544" target="_blank" class="discord" aria-label="Redirect to Discord"><i class="fab fa-discord"></i></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/realeple" target="_blank" class="twitter" aria-label="Redirect to Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com/EpleWasTaken" target="_blank" class="twitter" aria-label="Redirect to Twitter"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
                     <a href="https://github.com/EpleWasTaken" target="_blank" class="github" aria-label="Redirect to Github"><i class="fab fa-github"></i></a>
@@ -70,6 +71,7 @@
                 </div>
             </div>
         </div>
+        <p class="index__p__addiction">Yes, I have an addiction to turquoise</p>
     </footer>
     <script src="/js/index.js"></script>
     <script src="/js/button.js"></script>

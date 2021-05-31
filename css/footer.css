@@ -9,24 +9,26 @@
 /*------------------Footer with social and legal links------------------*/
 
 footer {
-  border: 1px solid red;
   padding: 10px;
   width: 100%;
 }
 
-/*------------------FFOOTER SOCIAL------------------*/
+/*------------------FOOTER SOCIAL------------------*/
 
 
 .footer__container {
+  margin: 0 auto;
+  max-width: 400px;
 }
 
-.footer__socials {
+ul.footer__socials {
   display: flex;
   margin: 0 auto;
   font-size: 40px;
   list-style: none;
   width: 100%;
   max-width: 400px;
+  justify-content: space-between;
 }
 
 .discord {
@@ -70,6 +72,10 @@ footer {
 /*------------------FOOTER COPYRIGHT------------------*/
 
 .footer__copyright__container {
+}
+
+.footer__copyright {
+  text-align: center;
   display: flex;
   padding-top: 30px;
   color: var(--main-blue);
@@ -78,6 +84,16 @@ footer {
   margin: 0 auto;
 }
 
-.footer__copyright {
-  text-align: center;
+@media screen and (min-width:1024px) {
+  ul.footer__socials {
+    max-width: 400px;
+  }
+
+  ul.footer__legal {
+    max-width: 600px;
+  }
+
+  ul.footer__copyright {
+    max-width: 600px;
+  }
 }

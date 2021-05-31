@@ -11,12 +11,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--main-black);
   font-family: "Poppins", sans-serif;
 }
 
 html {
   padding: 20px;
+  background-color: var(--main-black);
 }
 
 header {
@@ -25,18 +25,25 @@ header {
   text-align: center;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  font-weight: 400;
-}
-
 #logo {
-  max-width: 100px;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #backbutton {
-  display: none;
+  display: inline;
+  color: var(--main-blue);
+  background-color: var(--main-black);
+  border: 1px solid var(--main-blue);
+  padding: 5px;
+  width: 70px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
 }
 
 .welcome-text {
@@ -44,25 +51,88 @@ h1 {
   color: var(--main-blue);
   justify-content: center;
   position: relative;
-  font-weight: 300;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 30px;
   padding: 100px;
 }
 
+.index__h1 {
+  color: var(--main-blue);
+  text-align: center;
+  font-size: 60px;
+}
+
+.index__h2 {
+  color: var(--main-blue);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.index__portfolio__link {
+  color: var(--main-blue);
+}
+
+.index__portfolio__link:hover {
+  color: red;
+}
+
+.index__p__addiction {
+  color: var(--main-blue);
+  text-align: center;
+  margin-top: 400px;
+}
+
+.portfolio__links__container {
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.portfolio__h1 {
+  color: var(--main-blue);
+  text-align: center;
+  font-size: 60px;
+}
+
+.portfolio__h2 {
+  color: var(--main-blue);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#link__button {
+  color: black;
+  border: 5px solid transparent;
+  background-color: var(--main-blue);
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+/* #csmuseum {
+  color: black;
+  border: none;
+  background-color: var(--main-blue);
+  padding: 10px;
+  width: 100%;
+}
+
+#eplesblog {
+  color: black;
+  border: none;
+  background-color: var(--main-blue);
+  padding: 10px;
+  width: 100%;
+} */
 
 @media screen and (min-width: 1024px) {
-  :root {
-    --main-blue: #00ffff;
-    --main-black: #000000;
-    --main-white: #ffffff;
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    background-color: var(--main-black);
-    font-family: "Poppins", sans-serif;
-  }
 
   header {
     color: var(--main-blue);
@@ -70,27 +140,8 @@ h1 {
     text-align: center;
   }
 
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-  }
-
-  #logo {
-    max-width: 200px;
-    padding-top: 20px;
-  }
-
   #backbutton {
-    display: inline;
-    color: var(--main-blue);
-    background-color: var(--main-black);
-    border: 1px solid var(--main-blue);
-    padding: 5px;
-    width: 70px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
+    display: none;
   }
 
   #backbutton:hover {
@@ -105,5 +156,10 @@ h1 {
     color: var(--main-blue);
     justify-content: center;
     position: relative;
+  }
+
+  #link__button:hover {
+    border: 5px solid black;
+    border-radius: 50px;
   }
 }
