@@ -162,6 +162,10 @@ header {
   width: 100%;
 } */
 
+.eplesblog_h1 {
+  color: var(--main-blue);
+}
+
 @media screen and (min-width: 1024px) {
 
   header {
