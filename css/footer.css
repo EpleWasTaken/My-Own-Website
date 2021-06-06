@@ -21,7 +21,7 @@ footer {
   max-width: 400px;
 }
 
-ul.footer__socials {
+.footer__socials {
   display: flex;
   margin: 0 auto;
   font-size: 40px;
@@ -85,15 +85,8 @@ ul.footer__socials {
 }
 
 @media screen and (min-width:1024px) {
-  ul.footer__socials {
-    max-width: 400px;
-  }
-
-  ul.footer__legal {
+  body {
     max-width: 600px;
-  }
-
-  ul.footer__copyright {
-    max-width: 600px;
+    margin: 0 auto;
   }
 }

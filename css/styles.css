@@ -19,6 +19,25 @@ html {
   background-color: var(--main-black);
 }
 
+body {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Custom scrollbar(not supported on firefox, internet explorer and firefox android.)*/
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+  
+body::-webkit-scrollbar-track {
+  background: black;
+}
+  
+body::-webkit-scrollbar-thumb {
+  background: var(--main-blue);
+}
+
 header {
   color: var(--main-blue);
   font-weight: 300;
@@ -26,7 +45,7 @@ header {
 }
 
 #logo {
-  display: block;
+  display: inline-block;
   max-width: 150px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -46,14 +65,24 @@ header {
   width: 40px;
 }
 
+/* #hamburger {
+  border: none;
+  font-size: 40px;
+  color: var(--main-blue);
+  background-color: transparent;
+  cursor: pointer;
+} */
+
 .welcome-text {
   display: flex;
   color: var(--main-blue);
   justify-content: center;
+  text-align: center;
   position: relative;
   font-weight: 600;
-  font-size: 30px;
-  padding: 100px;
+  font-size: 25px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .index__h1 {
@@ -81,7 +110,7 @@ header {
 .index__p__addiction {
   color: var(--main-blue);
   text-align: center;
-  margin-top: 400px;
+  margin-top: 180px;
 }
 
 .portfolio__links__container {
@@ -113,7 +142,8 @@ header {
   margin-bottom: 20px;
   margin-top: 20px;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* #csmuseum {
@@ -160,6 +190,10 @@ header {
 
   #link__button:hover {
     border: 5px solid black;
-    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .index__p__addiction {
+    margin-top: 400px;
   }
 }
